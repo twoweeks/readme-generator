@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0
+}
+
+html,
+dialog {
+	width: 100%;
+	height: 100%
+}
+
+body {
+	overflow-y: scroll;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 20px
+}
+
+body>* {
+	margin: .5em;
+	text-align: center
+}
+
+main {
+	font-size: 18px
+}
+
+table {
+	margin: 0 auto
+}
+
+table.hide tr:not(.show) {
+	display: none
+}
+
+table tr td {
+	vertical-align: middle;
+	padding: 5px;
+}
+
+table tr td:first-child {
+	width: 400px;
+	text-align: right
+}
+
+textarea {
+	width: 100%;
+	padding: 5px;
+	resize: none
+}
+
+table textarea {
+	height: 75px
+}
+
+button,
+input[type='button'] {
+	padding: 2px 5px
+}
+
+table .btn {
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px
+}
+
+input[type='text'] {
+	width: 400px;
+	padding: 5px
+}
+
+table .error,
+table .btn-save,
+table .dls,
+dialog {
+	display: none
+}
+
+dialog {
+	position: fixed;
+	background-color: rgba(0, 0, 0, .5);
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	border: 0;
+	left: 0;
+	top: 0
+}
+
+dialog div {
+	width: 500px;
+	background-color: #eee;
+	padding: 10px;
+	border-radius: 5px
+}
+
+dialog h3 {
+	margin-bottom: 10px
+}
+
+dialog textarea {
+	display: block;
+	height: 300px
+}
+
+dialog button {
+	margin-top: 10px
+}

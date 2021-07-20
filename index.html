@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="ru"><head>
+	<meta charset="utf-8">
+	<title>Генератор readme.txt</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	<link href="./styles.css" rel="stylesheet">
+</head><body>
+	<header>
+		<h1>Генератор readme.txt</h1>
+	</header>
+
+	<main>
+		<table class="hide">
+			<tr class="show">
+				<td><label for="name">Название</label></td>
+				<td><input id="name" type="text" required></td>
+			</tr>
+			<tr>
+				<td><label for="genre">Жанр</label></td>
+				<td><input id="genre" type="text"></td>
+			</tr>
+			<tr class="show">
+				<td><label for="descriptlion">Описание (краткий сюжет/про что она)</label></td>
+				<td><textarea id="descriptlion" required></textarea></td>
+			</tr>
+			<tr class="show">
+				<td><label for="tools">На чём создавалась игра и/или с помощью каких инструментов создавался её контент</label></td>
+				<td><textarea id="tools" required></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="controls">Управление</label></td>
+				<td><textarea id="controls"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="ach">Заявленные ачивменты</label></td>
+				<td><textarea id="ach"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="link">Ссылка на блог</label></td>
+				<td><input id="link" type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="email">Почта</label></td>
+				<td><input id="email" type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="trip">Трипкод</label></td>
+				<td><input id="trip" type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="dep">Требуемые для запуска зависимости</label></td>
+				<td><textarea id="dep"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="repo">Cсылка на репозиторий с исходным кодом</label></td>
+				<td><input id="repo" type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="third-party">Авторство сторонних ресурсов</label></td>
+				<td><textarea id="third-party"></textarea></td>
+			</tr>
+			<tr class="show no-parse">
+				<td colspan="2" style="text-align: center">
+					<input type="button" class="btn btn-show" value="открыть/скрыть необязательные поля">
+					<input type="button" class="btn btn-save" value="запомнить данные">
+				</td>
+			</tr>
+			<tr class="show no-parse dls">
+				<td colspan="2" style="text-align: center">
+					<a class="prev" href="javascript: void(0)">посмотреть</a> / <a class="dl" download="readme.txt">скачать</a>
+				</td>
+			</tr>
+			<tr class="show no-parse error">
+				<td colspan="2" style="text-align: center">
+					<p></p>
+				</td>
+			</tr>
+			<tr class="show no-parse">
+				<td colspan="2" style="text-align: center">
+					<input type="button" class="btn btn-gen" value="сгенерировать">
+				</td>
+			</tr>
+		</table>
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/hi-base64@0.2.1/build/base64.min.js" integrity="sha256-c/Ynb3yzld1MvdxTAq18mMmcrr9P//lqdgmxBhjUkKA=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/kamina-js@1.3.2/dist/kamina.min.js" integrity="sha256-dr47GarbRAmyhjmKZJkzGiGF2r/1kJlzFE+75ITwstw=" crossorigin="anonymous"></script>
+
+	<script src="./main.js" defer></script>
+</body></html>
